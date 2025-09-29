@@ -5,7 +5,7 @@ export default () => {
     createElement(
       "li",
       {
-        className: "list-none",
+        className: "list-none cursor-pointer",
         key: item.toLowerCase(),
       },
       item
@@ -21,7 +21,7 @@ export default () => {
       createElement(
         "li",
         {
-          className: "list-none",
+          className: "list-none cursor-pointer",
           key: item.navMenu.toLowerCase(),
         },
         createElement("div", {}, createElement("i", { className: item.icon }), item.navMenu)
@@ -31,16 +31,16 @@ export default () => {
   const navbar = createElement(
     "nav",
     {
-      className: "flex justify-between items-center border-b-[2px] p-3",
+      className: "flex justify-between p-5 items-center border-b-[2px] fixed top-0 bg-white z-2 w-[calc(100%-60px)] ",
     },
     createElement(
       "div",
-      {className: "flex items-center gap-7"},
-      createElement("img", { src: "./assets/img/pngwing.com.png", alt: "logo cnn", className: "w-20 h-10" }),
+      { className: "flex items-center gap-7" },
+      createElement("img", { src: "./assets/img/pngwing.com.png", alt: "logo cnn", className: "w-20 h-10 cursor-pointer" }),
       createElement(
         "ul",
         {
-          className: "flex gap-5 ",
+          className: "hidden md:flex gap-5 ",
         },
         leftNav
       )
@@ -48,7 +48,7 @@ export default () => {
     createElement(
       "ul",
       {
-        className: "flex gap-5 ",
+        className: "hidden md:flex gap-5",
       },
       rightNav
     )
