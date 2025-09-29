@@ -36,7 +36,7 @@ export default () => {
     createElement(
       "div",
       { className: "flex items-center gap-7" },
-      createElement("img", { src: "./assets/img/pngwing.com.png", alt: "logo cnn", className: "w-20 h-10 cursor-pointer" }),
+      createElement("img", { src: "/img/pngwing.com.png", alt: "logo cnn", className: "w-20 h-10 cursor-pointer" }),
       createElement(
         "ul",
         {
